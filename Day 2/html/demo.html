@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    
+</head>
+<body>
+    <h1>Welcome to todays's session on JavaScript</h1>
+    <p id="demo">Original Text</p>
+    <button id="btn">Click me</button>
+    
+
+    <script>
+        //addEventLister
+        const button=document.getElementById('btn');
+        button.addEventListener('click', ()=>{
+            //alert("Submitted Successfully....")
+        })
+        const para=document.getElementById('demo');
+        para.addEventListener('mouseout',()=>{
+            alert("Mouse is over the para")
+        })
+
+
+
+
+        //DOM modification
+        //const changeText=document.getElementById('demo');
+        //console.log(changeText)
+        //changeText.innerText="Text Changed"
+        //changeText.innerHTML='<img src="">'
+
+
+        let age=23; // let help to modify the data value
+        console.log(age);
+        const name="Shridev"; // value cannot be modified
+        console.log(name);
+        // conditional statement
+        // if else 
+        age=17;
+        if(age>=18){
+            //block of code
+            console.log("You are an adult");
+        }
+        else{
+            //block of code
+            console.log("you are a minor");
+        }
+
+        let score=75;
+        if(score>=90){
+            //block of code
+            console.log("Grade: A")
+        }
+        else if(score>=75){
+            //block of code
+            console.log("Grade:B")
+        }
+        else if(score>=55){
+            //block of code
+            console.log("Grade: C")
+        }
+        else{
+            console.log("You have failed")
+        }
+        
+        //For loop- is to run a block of code for a specific number of time
+        //for ...of for...in
+        //for(const element of iterable){
+        //}
+        let fruits=["apple","banana","cheery"] // 3 times index value->[o,1,2,3]
+        //for(const index of fruits){
+          //  console.log(fruit)
+        //}
+        for(const index in fruits){
+            console.log(index+':'+fruits[index])
+        }
+
+        //Function
+        a=5
+        b=3
+        console.log(a+b)
+        c=5
+        d=4
+        console.log(c+d)
+
+        function add(a,b){
+            console.log(a+b)//method
+        }
+        add(2,3)
+        add(3,6)
+
+       // function multiply(a,b){
+           // console.log(a*b)
+        //}
+        let multiply=(a,b)=>{
+            console.log(a*b)
+        }
+        multiply(2,3)
+    </script>
+</body>
+</html>
