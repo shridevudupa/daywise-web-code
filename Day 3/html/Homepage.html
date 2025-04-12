@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="./Homepage.css">
+    
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="./download.jpeg" alt="Its an company logo image">
+        </div>
+        <ul>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">About Us</a></li>
+            <li class="item"><a href="#">Services</a></li>
+            <li class="item"><a href="#">Contact Us</a></li>
+            <li class="item"><a href="./Login.html" target="_blank" >Login</a> / <a href="./Signup.html" target="_blank">SignUp</a></li>
+            <li class="item"><input type="text" id="value"><button id="searchBtn">Search</button></li>
+        </ul>
+    </nav>
+    <section id="result-section">
+        <h2 class="center">Search Results</h2>
+        <div id="result-container"></div>
+    </section>
+    <script src="./Homepage.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.8.4/dist/axios.min.js"></script>
+</body>
+</html>
