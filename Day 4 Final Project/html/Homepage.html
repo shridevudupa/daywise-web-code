@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Show Tracker - Your Entertainment Hub</title>
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="./Homepage.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+        <!-- Logo -->
+        <div id="logo">
+            <img src="./Logo.png" alt="TV Show Tracker Logo">
+        </div>
+        <!-- Menu Items -->
+        <ul>
+            <li class="item"><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+            <li class="item"><a href="#featured"><i class="fas fa-star"></i> Featured</a></li>
+            <li class="item"><a href="#services"><i class="fas fa-tv"></i> Services</a></li>
+            <li class="item"><a href="./Aboutus.html"><i class="fas fa-info-circle"></i> About</a></li>
+            <li class="item"><a href="./Login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+            <li class="item"><a href="./Signup.html"><i class="fas fa-user-plus"></i> SignUp</a></li>
+            <!-- Search Box -->
+            <li class="item">
+                <div id="search-container">
+                    <input type="text" id="value" placeholder="Search TV shows...">
+                    <button id="searchBtn"><i class="fas fa-search"></i></button>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home">
+        <div class="hero-content">
+            <h1 class="h-primary">Your Ultimate TV Show Companion</h1>
+            <p class="hero-text">Discover, track, and enjoy your favorite shows all in one place</p>
+            <div class="cta-buttons">
+                <button class="btn primary-btn"><a href="./Login.html">Get Started <i class="fas fa-arrow-right"></i></a></button>
+                <button class="btn secondary-btn">Learn More <i class="fas fa-info-circle"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Shows Section -->
+    <section id="featured">
+        <h2 class="section-title">Featured Shows</h2>
+        <div class="featured-grid">
+            <!-- Sample Featured Show Card -->
+            <div class="featured-card">
+                <div class="card-badge">Popular</div>
+                <img src="./th.jpeg" alt="Featured Show 1" height="200" width="300">
+                <div class="card-content">
+                    <h3>Breaking Bad</h3>
+                    <div class="rating">⭐ 9.5/10</div>
+                    <p>A high school chemistry teacher turned methamphetamine manufacturer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Results Section -->
+    <section id="result-section">
+        <h2 class="section-title">Search Results</h2>
+        <div id="result-container">
+            <!-- Search results will be added here by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2 class="section-title">Our Services</h2>
+        <div class="services-grid">
+            <!-- Track Shows Card -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-bookmark"></i>
+                </div>
+                <h3>Track Shows</h3>
+                <p>Keep track of your watching progress and never miss an episode</p>
+            </div>
+            <!-- Notifications Card -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-bell"></i>
+                </div>
+                <h3>Get Notifications</h3>
+                <p>Receive alerts when new episodes are available</p>
+            </div>
+            <!-- Discussions Card -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Join Discussions</h3>
+                <p>Connect with other fans and share your thoughts</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <!-- About Section -->
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>TV Show Tracker helps you discover and keep track of the best television content.</p>
+            </div>
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#featured">Featured</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+            <!-- Social Links -->
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 TV Show Tracker. All rights reserved. | Powered by <a href="https://www.tvmaze.com" target="_blank" rel="noopener">TVMaze</a></p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.8.4/dist/axios.min.js"></script>
+    <script src="./Homepage.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="Login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" id="box" novalidate>
+            <i class="fa-solid fa-user" id="value"></i>
+            <h1 class="center">Welcome Back!</h1>
+            <div class="item-group">
+                <label for="content-email">Email</label>
+                <div class="input-wrapper">
+                    <i class="fa-solid fa-envelope input-icon"></i>
+                    <input type="email" placeholder="Enter your email" required id="content-email" onkeyup="validateemail()">
+                </div>
+                <span id="email-error"></span>
+            </div>
+            <div class="item-group">
+                <label for="content-pass">Password</label>
+                <div class="input-wrapper">
+                    <i class="fa-solid fa-lock input-icon"></i>
+                    <input type="password" placeholder="Enter your password" required id="content-pass" onkeyup="validatepass()">
+                    <i class="fa-solid fa-eye toggle-password" id="toggle"></i>
+                </div>
+                <span id="pass-error"></span>
+            </div>
+            <button type="submit">
+                <span>Login</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <p class="signup-link">Don't have an account? <a href="Signup.html">Sign up here</a></p>
+        </form>
+    </div>
+    <script src="Login.js"></script>
+</body>
+</html>
